@@ -122,6 +122,20 @@ In order to improve our model accuracy when exposing it to unseen data the follo
 
 **Feature Engineering:** Exploring additional features or creating new meaningful features from existing features  could enhance the predictive power of the model. 
 
+# Feature Importance
+![feature importance](https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/78ce58a5-b813-46bf-8606-ce06d5aa4d01)
+Here we can see the most important features from using our Random Forest Model. The 5 most important features are Item_MRP, Item_Visibility, Outlet_Type_Supermarket Type3, Outlet_Type_Supermarket Type1, Item_Weight
+
+
+# Coeffecients
+![coefficients](https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/357682d8-66a3-4377-9c88-04f92ede0194)
+The retailer aims to improve sales performance for food items across their various stores. To achieve this, they seek to develop a sales prediction model that can provide valuable insights into the factors that significantly influence sales.
+
+We found the three most impactful features. We are prediciting for the sales of the product in the particular store.
+
+The three Outlet Type Supermarkets all had a very significant impact on Sales Production. Each of these SuperMarkets impact Sales Production positvely to varying degrees.
+
+Outlet_Type_Supermarket Type3 increases item sales production by 3532.3 items. Outlet_Type_Supermarket Type1 increases item sales production by 1547.3 items. Outlet_Type_Supermarket Type2 increases item sales production by 1161.9 items.
 
 
 
