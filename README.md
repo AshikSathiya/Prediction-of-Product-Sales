@@ -138,6 +138,16 @@ The three Outlet Type Supermarkets all had a very significant impact on Sales Pr
 Outlet_Type_Supermarket Type3 increases item sales production by 3532.3 items. Outlet_Type_Supermarket Type1 increases item sales production by 1547.3 items. Outlet_Type_Supermarket Type2 increases item sales production by 1161.9 items.
 
 
+# SHAP Barplot
+
+<img width="885" alt="SHAP barplot" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/7e4fcec8-7f8c-4783-89f1-ea7978ec044f">
+The most important features according to SHAP and the original feature importances differ. The top 5 most important features according to SHAP are Item_MRP, Outlet_Type_SuperMarket Type1, Outlet_Type_SuperMarket Type3, Item_Visibility, and Outlet_Establishment_Year.
+
+According to our original important features, the most important features are Item_MRP, Item_Visibility, Outlet_Type_SuperMarket Type 3, Outlet_Type_SuperMarket Type1, and Item_Weight.
+
+The only similiarity between the two is Item_MRP being the most important
+
+
 
 ### For further information
 
