@@ -157,7 +157,66 @@ Item_MRP is the Maximum Retail Price (list price) of the product. The plot is pr
 Outlet_Type_SuperMarket Type1 tells us that there is a higher Sales Output Items sold in Outlet_Type_SuperMarket Type1.
 
 This is more evident Outlet_Type_SuperMarket Type3 since there is a greater difference between high and low features.
-### For further information
 
+# Local SHAP Plot
+
+I was curious to see how how much the Outlet Type affects Sales since it is one of the most important features. I first set the visibility of the product to be above average. I then compared the Outlet Type 1 to the Non OUtlet Type 1 stores. Finally I wanted to see what facotrs differed for the places that had High Sales and Low Sales.
+
+So to summarise the 4 Groups we will be comparing are
+* High Sales
+   * Outlet Type 1 High Sales
+   * Non Outlet Type 1 High Sales
+
+* Low Sales
+   * Outlet Type 1 Low Sales
+   * Non Outlet Type 1 Low Sales
+
+ ## Outlet Type 1 High Sales
+
+ <img width="965" alt="Type1_HighSales" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/fcc9c946-8620-45f4-a544-6d69d288b1bb">
+
+As you can see, Item_MRP, Outlet_Type_Supermarket Type1 are the two prominent facotrs that led to a higher Sales Price. However, Outlet_Type_Supermarket Type3 seems to be the biggest factor to lower the sales price.
+
+## Non Outlet Type 1 High Sales
+<img width="962" alt="NonType_HighSales" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/b58cf99d-9822-4f5a-9b50-13f261e21286">
+
+The only factor that increased the sales is the Outlet Type Being Type 3. This was also the factor that lowered the above force plot. The Outlet Type 1 seems to have lowered the Sales and so this might tell us that Type 3 Supermarkets have the highest sales.
+
+
+## Outlet Type 1 Low Sales
+<img width="964" alt="Type 1_Low" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/d3b6b311-4040-47ab-acd2-312e7d8dd546">
+
+According to this plot the only factor that contributed to a higher sales price is Outlet_Type_Supermaket Type 1. However the Item_MRP greatly impacted the sales, bringing it down.
+
+## Non Outlet Type 1 Low Sales
+<img width="977" alt="Non_Low" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/3d421d4a-e15c-41a6-a9dc-6dc72b4422cd">
+
+Here, Item_MRP is the only factor that is contributing to a higher sales. However interestingly enough Outlet_Type_Supermarket Type 1 and Outlet_Type_Supermarket Type 3 being 0 were the biggest factors that brought sales down.
+
+
+# LIME Plots
+
+## Outlet Type 1 High Sales
+<img width="880" alt="LIME_Type 1_High" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/4db652c8-2a18-4a08-a1c4-2ff9300c8b3e">
+
+The primary negative factor that brings down the sales is the fact Outlet_Type Supermarket is not Type 3. In contrast Outlet_Type Supermarket Type 1 is the biggest factor that increased the sales price.
+
+## Non Outlet Type 1 High Sales
+<img width="890" alt="LIME_Non_High" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/f01d6b52-e811-4507-bff5-75fc1519d8b1">
+
+Here, we have the exact opposite of the aboves plots primary facotrs affecting the prediciton. The OUtlet Type1 being 0 greatly hurt the sales, however the Outlet Type3 being 1 increased the Sales alot. This shows the impact these two metrics have on sales and howmuch the type of outlet affects the sales.
+
+
+## Outlet Type 1 Low Sales
+<img width="867" alt="LIME_Type1_Low" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/f308c4cd-4e8e-477e-bf3b-07632d746dc3">
+
+In this plot the Item_MRP stands out as it is lower than 98.82 which brings down Sales. Once again the Outlet Type affects the sales greatly.
+
+## Non Outlet Type 1 Low Sales
+<img width="871" alt="LIME_Non_Low" src="https://github.com/AshikSathiya/Prediction-of-Product-Sales/assets/92455762/26d1a5f0-3e36-459b-9e03-4940aabbc5ea">
+
+Here, we have an outlet type that is neither Type 1 or Type 3 and this greatly hurts the sales. The only positve factor is the Item_MRP.
+
+### For further information
 
 For any additional questions, please contact **ashik.sathiya@gmail.com**
